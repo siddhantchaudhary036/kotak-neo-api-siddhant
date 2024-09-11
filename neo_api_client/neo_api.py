@@ -70,7 +70,7 @@ class NeoAPI:
             self.api_client = ApiClient(self.configuration)
             try:
                 session_init = neo_api_client.LoginAPI(self.api_client).session_init()
-                print(json.dumps({"data": session_init}))
+                #print(json.dumps({"data": session_init}))
             except ApiException as ex:
                 error = ex
         elif access_token:
@@ -118,7 +118,7 @@ class NeoAPI:
             # print(gen_otp)
         else:
             gen_otp = {'error': [{'code': '10522', 'message': 'Issues while generating OTP! Try to login again.'}]}
-        return "Hello"
+        return view_token
 
     def session_2fa(self, OTP):
         """
