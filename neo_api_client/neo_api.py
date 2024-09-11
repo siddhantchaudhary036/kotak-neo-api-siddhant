@@ -118,7 +118,7 @@ class NeoAPI:
             # print(gen_otp)
         else:
             gen_otp = {'error': [{'code': '10522', 'message': 'Issues while generating OTP! Try to login again.'}]}
-        return view_token
+        return "Hello"
 
     def session_2fa(self, OTP):
         """
