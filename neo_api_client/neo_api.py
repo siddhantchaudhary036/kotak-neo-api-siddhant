@@ -694,6 +694,7 @@ class NeoAPI:
                     function_name = "subscribe"
                 obj = getattr(NeoAPI, function_name, None)
                 if obj is None:
+                    print("OH NO")
                     print(f"{function_name} is not a valid function name.")
                 else:
                     sig = inspect.signature(obj)
