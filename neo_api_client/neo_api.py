@@ -683,6 +683,7 @@ class NeoAPI:
             raise ValueError("Please complete the Login Flow to Un_Subscribe the Scrips")
 
     def help(self, function_name=None):
+        print("HELPING YOU NOW")
         class_name = NeoAPI.__name__
         try:
             if function_name is None:
